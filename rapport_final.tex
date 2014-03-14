@@ -65,7 +65,11 @@ Enfin nous remercions nos familles, nos proches et amis, pour leur soutien sans 
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
-Le projet industriel de dernière année à TELECOM Nancy est un projet nécessaire pour l’obtention du diplôme. Il permet, à travers des outils vus en cours dans différents modules comme la gestion de projet, ou la programmation dans de multiples langages, de démontrer les capacités des l'élèves à mener à bien un projet informatique au sein d'une équipe.\\Les projets sont proposés par des entreprises qui en font la demande auprès de l’établissement. Ils sont donc des objectifs réels pour les industriels, ce qui implique un contrat entre les deux parties. Des entretiens ont lieu ensuite entre les équipes intéressées et les industriels afin de sélectionner une équipe pour chaque projet.\\VersusMind, un éditeur de logiciels, a développé un logiciel de gestion de projet en ligne : VMProject. Cette entreprise a proposé un sujet qui consiste à développer un nouveau tableau de bord pour ce logiciel. Le but est de permettre aux clients de VMProject d’avoir une vision globale de l’état actuel d’un ou plusieurs projets en cours, à l’aide de différent graphique sélectionnée auparavant, pour permettre la prise de décision. Nous nous sommes intéressé à ce projet, car il permet non seulement de développer nos compétence technique, mais aussi managérial. En effet savoir qu’elle type de données un chef de projet à besoin pour prendre des décisions est important. C’est donc ce projet qui a été confié à notre équipe, et nous mettons tout en œuvre pour le mener à terme.\\
+Le projet industriel de dernière année à TELECOM Nancy est un projet nécessaire pour l’obtention du diplôme. Il permet, à travers des outils vus en cours dans différents modules comme la gestion de projet, ou la programmation dans de multiples langages, de démontrer les capacités des l'élèves à mener à bien un projet informatique au sein d'une équipe.\\
+
+Les projets sont proposés par des entreprises qui en font la demande auprès de l’établissement. Ils sont donc des objectifs réels pour les industriels, ce qui implique un contrat entre les deux parties. Des entretiens ont lieu ensuite entre les équipes intéressées et les industriels afin de sélectionner une équipe pour chaque projet.\\
+
+VersusMind, un éditeur de logiciels, a développé un logiciel de gestion de projet en ligne : VMProject. Cette entreprise a proposé un sujet qui consiste à développer un nouveau tableau de bord pour ce logiciel. Le but est de permettre aux clients de VMProject d’avoir une vision globale de l’état actuel d’un ou plusieurs projets en cours, à l’aide de différent graphique sélectionnée auparavant, pour permettre la prise de décision. Nous nous sommes intéressé à ce projet, car il permet non seulement de développer nos compétence technique, mais aussi managérial. En effet savoir qu’elle type de données un chef de projet à besoin pour prendre des décisions est important. C’est donc ce projet qui a été confié à notre équipe, et nous mettons tout en œuvre pour le mener à terme.\\
 
 \chapter{VersusMind, la société}
 
@@ -202,23 +206,26 @@ Cependant, ces critères restent à déterminer. Au final, une dashboard est un 
 	\label{c1}
 \end{figure}
   
-  Mais la place allouée au graphique par rapport aux informations qu’il présente est bien trop petite ; on perd ici tout l’intérêt de la dashboard. D’une part, le graphe est présenté mais doit être grossi pour être lu, donc la notion de rapidité est perdue, et d’autre part, ce graphe ne fournit aucune donnée ce qui peut même être considéré comme une information contradictoire lorsque seule la miniature est affichée. Ici, c’est la notion de lisibilité qui est mise en défaut.Les données sont peu claires, peu précises (certains graphes ne s’affichent parfois pas), et le design de la page est assez simpliste. Les différents graphiques sont malgré tout cliquables en partie. Cela permet de restreindre les données affichées à une seule ressource ou à un seul aspect (réel – prévu – projeté) selon le graphe, et à obtenir un peu de détail sur les camemberts. Toutefois, on ne peut pas obtenir le détail des en fonction des tâches ; les données sont affichées pour le projet en entier. \\
-  Enfin, la pertinence des données est contestable : le graphique Etat des tâches n’apporte pas beaucoup d’informations. Savoir qu’un tel nombre de tâches est terminé ne donne pas nécessairement d’indications sur l’avancement du projet étant donné que chaque tâche peut avoir des durées et des importances différentes. De même, le graphe Charges par ressources par semaine montre ses limites dans le cadre d’un projet de grande envergure et surtout de longue durée, ne donnant aucune flexibilité au niveau de la plage d’affichage. Avec le nombre de semaines grandissant, les données vont devenir illisibles et futiles.\\
+  Mais la place allouée au graphique par rapport aux informations qu’il présente est bien trop petite ; on perd ici tout l’intérêt de la dashboard. D’une part, le graphe est présenté mais doit être grossi pour être lu, donc la notion de rapidité est perdue, et d’autre part, ce graphe ne fournit aucune donnée ce qui peut même être considéré comme une information contradictoire lorsque seule la miniature est affichée. Ici, c’est la notion de lisibilité qui est mise en défaut.
+Les données sont peu claires, peu précises (certains graphes ne s’affichent parfois pas), et le design de la page est assez simpliste. Les différents graphiques sont malgré tout cliquables en partie. Cela permet de restreindre les données affichées à une seule ressource ou à un seul aspect (réel – prévu – projeté) selon le graphe, et à obtenir un peu de détail sur les camemberts. Toutefois, on ne peut pas obtenir le détail des en fonction des tâches ; les données sont affichées pour le projet en entier. \\
+  
+Enfin, la pertinence des données est contestable : le graphique Etat des tâches n’apporte pas beaucoup d’informations. Savoir qu’un tel nombre de tâches est terminé ne donne pas nécessairement d’indications sur l’avancement du projet étant donné que chaque tâche peut avoir des durées et des importances différentes. De même, le graphe Charges par ressources par semaine montre ses limites dans le cadre d’un projet de grande envergure et surtout de longue durée, ne donnant aucune flexibilité au niveau de la plage d’affichage. Avec le nombre de semaines grandissant, les données vont devenir illisibles et futiles.\\
   
   \section{Objectifs et périmètres du projet}
   
 Notre projet consiste donc concrètement à créer une nouvelle page qui permettra aux chefs de projet de rendre la gestion beaucoup plus synthétique et aisée. Nous devons donc partir de zéro pour concevoir la nouvelle dashboard de VMProject. Comme décrit dans la note de cadrage, VersusMind est le maître d’ouvrage et nous, étudiants de TELECOM Nancy, sommes les maîtres d’œuvre.\\
-L’objectif est donc de créer un nouveau tableau de bord pour VMProject intégrant plusieurs fonctionnalités. Il nous faudra dans un premier temps déterminer les données à afficher sur cette page (certaines informations sont plus pertinentes que d’autres), selon ce que proposent les clients, tout comme les concurrents sur leurs propres solutions.\\
-Il est donc nécessaire d’effectuer un tour d’horizon des concurrents et une sélection du support technique le plus adapté. Il est primordial de définir clairement les étapes du projet avant de commencer le développement, pour éviter toute perte de temps. S’en suivra ensuite une phase de tests afin d’assurer la qualité du produit fini.\\
-Au niveau du produit en lui-même, les objectifs sont :\\\begin{itemize}
+L’objectif est donc de créer un nouveau tableau de bord pour VMProject intégrant plusieurs fonctionnalités. Il nous faudra dans un premier temps déterminer les données à afficher sur cette page (certaines informations sont plus pertinentes que d’autres), selon ce que proposent les clients, tout comme les concurrents sur leurs propres solutions.\\
+Il est donc nécessaire d’effectuer un tour d’horizon des concurrents et une sélection du support technique le plus adapté. Il est primordial de définir clairement les étapes du projet avant de commencer le développement, pour éviter toute perte de temps. S’en suivra ensuite une phase de tests afin d’assurer la qualité du produit fini.\\
+Au niveau du produit en lui-même, les objectifs sont :\\
+\begin{itemize}
 \item Une interface moderne
 \item L’affichage des graphiques doit être rapide
 \item La disposition des graphiques sur la page doit être modifiable
 \item Offrir une interaction avec le client en lui donnant la possibilité de choisir lui-même les informations à afficher.\\
 \end{itemize}
-Initialement, nous nous étions mis d’accord avec notre maitre d’ouvrage pour concevoir un outil simple d’utilisation, clair et compréhensible par tous. C’est en effet l’un des buts premiers d’un tableau de bord : la lisibilité et la simplicité. VMProject était alors un produit utilisable par tous, quel que soit le niveau de formation et les connaissances en gestion de projet ; ce logiciel était d’ailleurs gratuit le premier mois pour un test en production.\\
-Or pendant notre projet, la ligne de conduite de VersusMind sur certains points a changé, influençant directement les objectifs de notre travail. L’entreprise nancéenne  a choisi de professionnaliser et d’expertiser l’accès à VMProject ; en ne proposant plus que des démonstrations sur rendez-vous et en ne permettant l’utilisation directe qu’aux souscripteurs, VersusMind pense limiter l’accès à la future dashboard uniquement aux connaisseurs de la gestion de projet. C’est pourquoi il nous a été demandé à cet instant d’orienter notre conception sur des graphes contenant plus d’informations donc également plus complexes à comprendre. \\
-Le projet sera documenté, le code commenté, et des réunions régulières sont tenues avec nos encadrants universitaire à TELECOM Nancy, de même qu’avec les encadrants industriels.\\
+Initialement, nous nous étions mis d’accord avec notre maitre d’ouvrage pour concevoir un outil simple d’utilisation, clair et compréhensible par tous. C’est en effet l’un des buts premiers d’un tableau de bord : la lisibilité et la simplicité. VMProject était alors un produit utilisable par tous, quel que soit le niveau de formation et les connaissances en gestion de projet ; ce logiciel était d’ailleurs gratuit le premier mois pour un test en production.\\
+Or pendant notre projet, la ligne de conduite de VersusMind sur certains points a changé, influençant directement les objectifs de notre travail. L’entreprise nancéenne  a choisi de professionnaliser et d’expertiser l’accès à VMProject ; en ne proposant plus que des démonstrations sur rendez-vous et en ne permettant l’utilisation directe qu’aux souscripteurs, VersusMind pense limiter l’accès à la future dashboard uniquement aux connaisseurs de la gestion de projet. C’est pourquoi il nous a été demandé à cet instant d’orienter notre conception sur des graphes contenant plus d’informations donc également plus complexes à comprendre. \\
+Le projet sera documenté, le code commenté, et des réunions régulières sont tenues avec nos encadrants universitaire à TELECOM Nancy, de même qu’avec les encadrants industriels.\\
 
 \chapter{Méthodes de travail}
 
@@ -329,11 +336,11 @@ Plutôt que d'attendre la fin de la phase de développement, nous avons commenc�
 
 	\subsection{Conclusion sur la gestion de projet}
 	
-	Nous avons appris à nos dépends que la gestion de projet n'était pas un exercice facile, en effet réaliser un planning prévisionnel est une tâche ardue car nous ne pouvons jamais prévoir tout à l'avance. Comme nous pouvons le voir avec les plannings présentés précédemment les périodes n'ont pas été respectées. Mais cela nous a montré la difficulté de gérer un projet sur ce point. L'exercice a été très pédagogique.\\
+	Nous avons appris à nos dépends que la gestion de projet n'était pas un exercice facile, en effet réaliser un planning prévisionnel est une tâche ardue car nous ne pouvons jamais prévoir tout à l'avance. Comme nous pouvons le voir avec les plannings présentés précédemment, les périodes n'ont pas été respectées. Mais cela nous a montré la difficulté de gérer un projet sur ce point. L'exercice a été très pédagogique.\\
 	
-	Ensuite la travail en équipe de 4 a été une partie qui nous a énormément appris sur notre capacité à travailler avec les uns et les autres sur une longue durée. Et en conclusion, nous avons été un groupe plutôt homogène et compatible. Ce qui n'est pas vraiment une découverte, mais une confirmation car nous nous sommes aussi choisi pour notre compatibilité possible.\\
+	Ensuite la travail en équipe de quatre personnes a été une partie qui nous a énormément appris sur notre capacité à travailler ensemble sur une longue durée. Et en conclusion, nous avons été un groupe plutôt homogène et compatible. Ce qui n'est pas vraiment une découverte, mais une confirmation car nous nous sommes aussi choisi pour notre compatibilité possible.\\
 	
-	En revanche sur le plan de la communication avec l'entreprise nous nous sommes parfois sentis mis à l'écart du processus de décision et des différents objectifs. Mais nous avons aussi appris de cela. Au final nous avons passé environ \textbf{900h} sur le projet.\\
+	En revanche, sur le plan de la communication avec l'entreprise, nous nous sommes parfois sentis mis à l'écart du processus de décision et des différents objectifs. Mais nous avons aussi appris de cela. Au final nous avons passé environ \textbf{900h} sur le projet.\\
 
 \chapter{Phase de conception}
 
@@ -341,9 +348,9 @@ La phase de conception est une phase essentielle dans la bonne réalisation d’
 
 	\section{Benchmark des concurrents}
 
-Le tour d’horizon des concurrents de VMProject est la première étape de la conception. C’est en effet le point de départ pour situer le terme de dashboard concernant la gestion de projet. Grâce aux concurrents, nous espérions alimenter notre recherche de critère et éventuellement d’idées pour la mise en forme et l’aspect de notre projet. Une bonne analyse de l’existant concurrentiel est également nécessaire pour comprendre les erreurs à éviter ainsi que les points forts à mettre en avant. A partir d’un listing de VersusMind ainsi que quelques recherches, nous avons étudié onze concurrents, à savoir : Time Performance, Planzone, Atikteam, Freedcamp, 5PM, Atlassian, Genius Inside, Project Plane, SciForma, Project Manager et Plum. Le résultat de notre benchmark se retrouve dans le tableau présenté en Annexe (cf. fig \ref{tabconcu}).\\
+Le tour d’horizon des concurrents de VMProject est la première étape de la conception. C’est en effet le point de départ pour situer le terme de dashboard concernant la gestion de projet. Grâce aux concurrents, nous espérions alimenter notre recherche de critères et éventuellement d’idées pour la mise en forme et l’aspect de notre projet. Une bonne analyse de l’existant concurrentiel est également nécessaire pour comprendre les erreurs à éviter ainsi que les points forts à mettre en avant. A partir d’un listing de VersusMind ainsi que quelques recherches, nous avons étudié onze concurrents, à savoir : Time Performance, Planzone, Atikteam, Freedcamp, 5PM, Atlassian, Genius Inside, Project Plane, SciForma, Project Manager et Plum. Le résultat de notre benchmark se retrouve dans le tableau présenté en Annexe (cf. fig \ref{tabconcu}).\\
 
-La colonne « Dashboard existante et accessible » indique si l’accès à la dashboard pour un test ou même une démonstration est payant, auquel cas nous n’avons pu procéder à l’analyse, et si le concurrent étudié possède une dashboard. Il s’avère malheureusement qu’un certains nombres de concurrents ne laissent pas libre accès à leur dashboard ; en revanche, et malgré le fait que peu d’idées en soient sorties, peu de logiciels de gestion de projet possède un réel tableau de bord synthétique et original, ce qui laisse une possibilité d’innover intéressante et donne une importance non négligeable à notre projet pour le développement de VMProject. Comme indiqué dans le tableau ci-dessus, le concurrent qui nous a le plus inspiré est Time Performance avec son « cockpit », visible sur la figure suivante : \\
+La colonne « Dashboard existante et accessible » indique si l’accès à la dashboard pour un test ou même une démonstration est payant, auquel cas nous n’avons pu procéder à l’analyse, et si le concurrent étudié possède une dashboard. Il s’avère malheureusement qu’un certain nombre de concurrents ne laissent pas libre accès à leur dashboard ; en revanche, et malgré le fait que peu d’idées en soient sorties, peu de logiciels de gestion de projet possèdent un réel tableau de bord synthétique et original, ce qui laisse une possibilité d’innovation intéressante et donne une importance non négligeable à notre projet pour le développement de VMProject. Comme indiqué dans le tableau ci-dessus, le concurrent qui nous a le plus inspiré est Time Performance avec son « cockpit », visible sur la figure suivante : \\
 
 \begin{figure}[H]
 	\centering
@@ -356,7 +363,7 @@ Plusieurs points sont pertinents, comme par exemple la liste des membres, l’ut
 	
 	\section{Étude et recherche de critères pertinents}
 	
-Nous avons donc ensuite eu a mené une étude et recherche des critères pertinents, étape délicate de ce projet du fait de notre manque d’expérience en terme de gestion de projet. Avec l’aide de nos encadrants universitaires et industriels, nous avons donc établi une liste des critères pertinents :\\
+Nous avons donc ensuite eu a mener une étude et recherche des critères pertinents, étape délicate de ce projet du fait de notre manque d’expérience en terme de gestion de projet. Avec l’aide de nos encadrants universitaires et industriels, nous avons donc établi une liste des critères pertinents :\\
 
 \begin{itemize}
 \item Les chiffres clés (avancement, budget…)
@@ -366,7 +373,7 @@ Nous avons donc ensuite eu a mené une étude et recherche des critères pertine
 \item Un burndown chart (graphe représentant le temps de travail restant en fonction du temps)\\
 \end{itemize}
 
-Il est important de noter également que VersusMind possède une volonté de conserver trois modes distincts d’affichage des données, à savoir : le mode réel, le mode prévu, et le mode projeté. Le mode réel est bien évidemment ce qu’il s’est réellement produit, et n’est accessible que pour le temps de projet déjà écoulé. Le mode prévu correspond aux données entrées dans VMProject par le chef de projet, au planning prévisionnel en quelque sorte. Le mode projeté est calculé par le logiciel et prend en compte le réel pour faire une estimation du futur. Ces trois différents modes doivent donc apparaitre sur la dashboard.\\
+Il est important de noter également que VersusMind possède une volonté de conserver trois modes distincts d’affichage des données, à savoir : le mode réel, le mode prévu, et le mode projeté. Le mode réel est bien évidemment ce qu’il s’est réellement produit, et n’est accessible que pour le temps de projet déjà écoulé. Le mode prévu correspond aux données entrées dans VMProject par le chef de projet, au planning prévisionnel en quelque sorte. Le mode projeté est calculé par le logiciel et prend en compte le réel pour faire une estimation du futur. Ces trois différents modes doivent donc apparaître sur la dashboard.\\
 
 	\section{Conception d'une maquette de départ}
 	
@@ -438,14 +445,14 @@ Cette maquette n'est certes pas si jolie mais présente tous les points importan
 
 	\section{Maquette finale}
 
-Nous avons donc proposé cette maquette à nos encadrants industriels. La responsable ergonomie de VersusMind a repris nos idées pour l’adapter à la charte graphique de VMProject. Certaines modifications de fond sont également apparues, dues au changement de positionnement de VersusMind par rapport à ses client suite à la proposition de notre maquette ; initialement, l’entreprise souhaitait quelque chose de simple et compréhensible par tous, puis s’est tournée vers un public plus expert et plus professionnel, à qui il on peut se permettre de proposer quelque chose de plus compliqué. La maquette proposée par VersusMind est donnée en fig. \ref{a4}.\\
+Nous avons donc proposé cette maquette à nos encadrants industriels. La responsable ergonomie de VersusMind a repris nos idées pour l’adapter à la charte graphique de VMProject. Certaines modifications de fond sont également apparues, dues au changement de positionnement de VersusMind par rapport à ses clients suite à la proposition de notre maquette ; initialement, l’entreprise souhaitait quelque chose de simple et compréhensible par tous, puis s’est tournée vers un public plus expert et plus professionnel, à qui on peut se permettre de proposer quelque chose de plus compliqué. La maquette proposée par VersusMind est donnée en fig. \ref{a4}.\\
 
 Comme pour la maquette que nous avions créée, nous allons détailler celle-ci en découpant les éléments un par un. Cela sera particulièrement utile car des modifications importantes et parfois complexes ont été appliquées par rapport à ce que nous imaginions au départ. A nouveau, nous présenterons notre découpage de la maquette de haut en bas, et de bas à gauche.\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{pictures/maquetteVersusmind/filtre.jpg}
-	\caption{}
+	\caption{Filtre de notre tableau de bord}
 	\label{12}
 \end{figure}
 
@@ -457,7 +464,7 @@ Cependant, la partie du filtre permettant de choisir des membres ou la totalité
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{pictures/maquetteVersusmind/descriptioncalendrier.jpg}
-	\caption{}
+	\caption{Calendrier et description du projet}
 	\label{13}
 \end{figure}
 
@@ -467,18 +474,18 @@ Juste en-dessous, le calendrier a pris des couleurs et des flèches sur les côt
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{pictures/maquetteVersusmind/3graphs.jpg}
-	\caption{}
+	\caption{Graphiques sur les charges, le budget et le retard}
 	\label{14}
 \end{figure}
 
-Ensuite, nous pouvons remarquer que nos 3 petits graphiques ont changés puisqu'ils ont intégré les chiffres clés dont nous parlions, sur le retard, le budget et les charges. C'est une bonne idée puisque les informations portaient sur le même sujet, elles sont désormais rassemblées.\\
+Ensuite, nous pouvons remarquer que nos trois petits graphiques ont changés puisqu'ils ont intégré les chiffres clés dont nous parlions, sur le retard, le budget et les charges. C'est une bonne idée puisque les informations portaient sur le même sujet, elles sont désormais rassemblées.\\
 
 A nouveau, il faut se fier au code colorimétrique pour comprendre les graphiques. Le cercle bleu clair correspond au réel, le bleu foncé au prévu et le rose au projeté. Sur le graphique d'avancement, le retard est mis en avant en étant affiché en rouge, pour sauter aux yeux de l'utilisateur.\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{pictures/maquetteVersusmind/repartitionInit.jpg}
-	\caption{}
+	\caption{Graphique de répartition dans son état initial}
 	\label{12}
 \end{figure}
 
@@ -489,7 +496,7 @@ De plus, les parts du camembert sont cliquables pour afficher de nouvelles infor
 Sur le côté de la maquette se situe un petit panneau gris, dépliable avec une flèche, affichant les acteurs du projet : membres de l'équipe et les clients. Ce panneau a peu changé par rapport à notre maquette d'origine et nous ne le détaillerons donc pas plus que cela (cf. fig. \ref{16}).\\
 
 
-Il faut noter que les éléments principaux, c'est à dire le calendrier et les différents graphiques, sont dans des widgets déplaçable par l'utilisateur, pour lui permettre d'organiser son tableau de bord à sa guise.\\
+Il faut noter que les éléments principaux, c'est à dire le calendrier et les différents graphiques, sont dans des widgets déplaçables par l'utilisateur, pour lui permettre d'organiser son tableau de bord à sa guise.\\
 
 
 En définitive, cette maquette nous est revenue plus travaillée, mais surtout bien plus complexe et il nous a fallu un certain temps afin d'en comprendre toutes les subtilités.\\
@@ -497,27 +504,49 @@ En définitive, cette maquette nous est revenue plus travaillée, mais surtout b
 
 	\section{Choix techniques}
 	
-	Pour les choix techniques au sein de notre tableau de bord, nous avons fait les choix suivants. Comme nous l’avons déjà dit plus haut dans ce rapport, nous avons sélectionné la librairie D3.js pour afficher et générer nos graphiques. Cette librairie a pour principaux avantages d’être open-source, d’être très bien documentée et beaucoup utilisée sur internet. De plus, les graphiques sont sobres et peuvent être animés. En Annexe E nous pouvons voir le travail de comparatif que nous avons effectué pour la recherche de cette librairie.\\
+	Pour les choix techniques au sein de notre tableau de bord, nous avons fait les choix suivants. Comme nous l’avons déjà dit plus haut dans ce rapport, nous avons sélectionné la librairie D3.js pour générer et afficher nos graphiques. Cette librairie a pour principaux avantages d’être open-source, d’être très bien documentée et beaucoup utilisée sur internet. De plus, les graphiques sont sobres et peuvent être animés. En Annexe E nous pouvons voir le travail de comparatif que nous avons effectué pour la recherche de cette librairie.\\
 
 Ensuite, VersusMind nous avait transmis leur souhait de pouvoir échanger la position des graphiques entre eux. Pour ce faire, nous avons étudié différentes librairies de widgets.\\
 
 		\subsection{Moteurs de widgets}
 		
-Afin de rendre le tableau de bord personnalisable, nous devions trouver un moyen pour l’utilisateur de modifier l’emplacement de ces graphiques. Nous avons choisis de mettre chaque élément dans des blocs distincts, appelé Widget. Ils pourront donc par la suite être déplacés pour convenir aux exigences de l’utilisateur.\\Il existe plusieurs types de programme permettant de faire ceci, appelé moteur de Widget. Windows 8 utilise d’ailleurs ce type d’interface pour ces utilisateurs (Interface Métro).\\
+Afin de rendre le tableau de bord personnalisable, nous devions trouver un moyen pour l’utilisateur de modifier l’emplacement de ces graphiques. Nous avons choisis de mettre chaque élément dans des blocs distincts, appelés widgets. Ils pourront donc par la suite être déplacés pour convenir aux exigences de l’utilisateur.\\
+
+Il existe plusieurs types de programmes permettant de faire ceci, appelés moteurs de widgets. Windows 8 utilise d’ailleurs ce type d’interface pour ses utilisateurs (Interface Métro).\\
 
 Nous devions donc rechercher un outil dont les critères étaient :
-\begin{itemize}	\item Créer différents Widget qu’on peut remplir avec du HTML	\item Widget déplaçables	\item Implantation possible dans le projet existant	\item Documentation complète	\item Gratuit	\item Libre	\item Utilisation simple pour l’utilisateur	\item Compatible avec tous les navigateurs : Internet Explorer, Firefox, Chrome, Safari
-\end{itemize}A partir de plusieurs recherches, nous avons trouvé plusieurs moteurs de Widget correspondant à nos critères.
-\begin{enumerate}\item Gridster : \\http://gridster.net/ \item Shapeshift : \\http://www.jqueryscript.net/demo/Dynamic-Drag-Drop-Grid-Layout-Plugin-shapeshift/demo/\item iNETTUTS : \\http://nettuts.s3.amazonaws.com/127\_iNETTUTS/demo/index.html\item gridly : \\http://ksylvest.github.io/jquery-gridly/
-\end{enumerate}	
+\begin{itemize}
+	\item Créer différents widgets qu’on peut remplir avec du HTML
+	\item Widgets déplaçables
+	\item Implémentation possible dans le projet existant
+	\item Documentation complète
+	\item Gratuit
+	\item Libre
+	\item Utilisation simple pour l’utilisateur
+	\item Compatible avec tous les navigateurs : Internet Explorer 9+, Firefox, Chrome, Safari
+\end{itemize}
+
+A partir de plusieurs recherches, nous avons trouvé plusieurs moteurs de widgets qui correspondent à nos critères.
+\begin{enumerate}
+\item Gridster : \\http://gridster.net/ 
+\item Shapeshift : \\http://www.jqueryscript.net/demo/Dynamic-Drag-Drop-Grid-Layout-Plugin-shapeshift/demo/
+\item iNETTUTS : \\http://nettuts.s3.amazonaws.com/127\_iNETTUTS/demo/index.html
+\item gridly : \\http://ksylvest.github.io/jquery-gridly/
+\end{enumerate}
+	
 	\subsubsection{Mais, lequel choisir ?}
 	
-	Nous avons établis un tableau comparatif de chaque moteur de Widget. Chaque outil a donc du être testé afin de voir s’il répondait ou non à chacun des critères. Les fonctionnalités de base, à savoir créer des blocs déplaçables, étaient toutes remplies pour chaque moteur, il a donc fallu donner plus de poids à certain critère pour départager ces outils. \\Le fait d’utiliser un produit documenté permet de l’intégrer beaucoup plus facilement, et donc rapidement dans le code source du projet. Ainsi, nous avons essayé d’installer chaque moteur, et nous avons constaté rapidement les différents problèmes.\\L’intégration était impossible pour cause d’incompatibilité avec la version de jQuery sur le serveur où alors compliqué à cause d’un plugin mal documenté…\\Il était donc très difficile d’intégrer un moteur de Widget à VMProject. Nous avons finalement choisis d’utiliser Gridster. L’avantage principale de se plugin jQuery est qu’il est très bien documenté et très utilisé, il bénéficie donc d’une grande communauté et d’une évolution continue.\\
+	Nous avons établi un tableau comparatif de chaque moteur de widgets. Chaque outil a donc du être testé afin de voir s’il répondait ou non à chacun des critères. Les fonctionnalités de base, à savoir créer des blocs déplaçables, étaient toutes remplies pour chaque moteur, il a donc fallu donner plus de poids à certain critères pour départager ces outils. \\
+
+Le fait d’utiliser un produit documenté permet de l’intégrer beaucoup plus facilement, et donc plus rapidement dans le code source du projet. Ainsi, nous avons essayé d’installer chaque moteur, et nous avons constaté rapidement les différents problèmes.\\
+L’intégration était impossible pour cause d’incompatibilité avec la version de jQuery des serveurs de VMProject, ou alors compliquée à cause d’un plugin mal documenté…\\
+
+Il était donc très difficile d’intégrer un moteur de widgets à VMProject. Nous avons finalement choisi d’utiliser Gridster. L’avantage principal de ce plugin jQuery est qu’il est très bien documenté et très utilisé, il bénéficie donc d’une grande communauté et d’une évolution continue.\\
 	
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{pictures/matthieu/m_gridster.png}
-	\caption{Démo d'une grille de widget gridster}
+	\caption{Démo d'une grille de widgets Gridster}
 	\label{w1}
 \end{figure}
 
@@ -525,32 +554,36 @@ Nous retrouvons sur cet aperçu de Gridster les principales fonctionnalités rec
 
 \subsection{Impression de la page de dashboard}
 
-Afin de présenter des résultats clairs à leur entreprise, les utilisateurs de VMProject ont besoin d’avoir d’une version papier de ce tableau de bord, il faut donc qu’il puisse être l’imprimer. Cette demande a été rajoutée sur les demandes primaires. Nous allons voir par la suite comment nous avons réalisé cela.
+Afin de présenter des résultats clairs à leur entreprise, les utilisateurs de VMProject ont besoin d’avoir une version papier de ce tableau de bord, il faut donc qu’il puisse être imprimable. Cette demande a été rajoutée en fin de projet, nous allons voir par la suite comment nous avons réalisé cela.
 
 \chapter{Réalisation et résultats}
 
 	\section{Découverte du code}
 Une fois la phase de conception terminée, nous avons pu découvrir le code qui fait fonctionner VMProject. Cette étape était assez conséquente car VMProject n’est pas si simple à comprendre. En effet, VMProject est une application qui a été développée par beaucoup de développeurs différents au cours des dernières années, et chaque développeur a codé avec sa propre logique. Cela a rajouté de la complexité à notre projet en plus de la documentation sur le code plutôt incomplète. Mais il faut tirer un avantage de cela, car cela a été très formateur pour nous.\\
 
- Pour comprendre le code il nous a fallut intégrer le principe de routes de MVC de l'application ou encore comprendre où et comment les code devait être modifié. Cependant, après une bonne semaine de découverte et de compréhension du code, nous étions prêts à démarrer le développement de notre dashboard. Ci-dessous le schéma présente l'architecture du code de VMProject et dans quels dossiers nous travaillons.\\
+ Pour comprendre le code il nous a fallu intégrer le principe de routes de MVC de l'application ou encore comprendre où et comment le code devait être modifié. Cependant, après une bonne semaine de découverte et de compréhension du code, nous étions prêts à démarrer le développement de notre dashboard. Ci-dessous le schéma présente l'architecture du code de VMProject et dans quels dossiers nous travaillons.\\
 
 %schéma dossiers travail
 
-VMProject est une application qui est développée en PHP pour la partie backend. L'équipe de développement a développé un framework MVC hybride en interne pour supporter l'architecture de notre application web, sauf que comme le logiciel est très étendu, les versions de différentes parties du code ne sont pas forcément à jour. De notre côté nous avons donc aussi du développer en PHP comme nous le verrons plus tard pour les différentes requêtes au backend et à la base de données que nous avons fait.\\
+VMProject est une application qui est développée en PHP pour la partie back-end. L'équipe de développement a développé un framework MVC hybride en interne pour supporter l'architecture de notre application web, sauf que comme le logiciel est très étendu, les versions de différentes parties du code ne sont pas forcément à jour. De notre côté nous avons donc aussi dû développer en PHP comme nous le verrons plus tard pour les différentes requêtes au back-end et à la base de données que nous avons faites.\\
 
-Concernant la base de données, elle tourne sur un moteur MySQL qui est très intéressant. En effet, VMProject est conçu de telle manière que dès qu'une personne souhaite créer un projet et ajouter des utilisateurs dessus elle créé dans la base de données MySQL une nouvelle base de données appelée instance VMProject. Ainsi les données de chaque \emph{super-utilisateur} sont séparées.\\
+Concernant la base de données, elle tourne sur un moteur MySQL qui est très intéressant. En effet, VMProject est conçu de telle manière que dès qu'une personne souhaite créer un projet et ajouter des utilisateurs dessus, elle créée dans la base de données MySQL une nouvelle base de données, appelée instance VMProject. Ainsi les données de chaque \emph{super-utilisateur} sont séparées.\\
 
-Pour le front-end et donc la partie client cela est fait de manière logique en HTML et CSS via des template qui sont interprétés par le moteur de rendu co framework MVC mais aussi avec du javascript. Il est très important de souligner que VMProject est une très grosse application javascript qui fait donc appel à beaucoup de requêtes asynchrones en Ajax. Deux librairies importantes sont utilisées sur l'application, ce sont ext.js et aussi jQuery 1.4 ; cette dernière version comme nous l'avons vu précédemment est un point important car à l'heure actuelle jQuery en est dans sa version 2.\\
+Pour le front-end et donc la partie client cela est fait de manière logique en HTML et CSS via des templates qui sont interprétés par le moteur de rendu du framework MVC mais aussi avec du javascript. Il est très important de souligner que VMProject est une très grosse application javascript qui fait donc appel à beaucoup de requêtes asynchrones en Ajax. Deux librairies importantes sont utilisées sur l'application : ext.js et aussi jQuery 1.4 ; cette dernière version comme nous l'avons vu précédemment est un point important car à l'heure actuelle jQuery en est dans sa version 2.\\
 
 La phase de découverte du code a longtemps été repoussée car il était inutile de se plonger dans le code sans développer quelque chose.\\
 	\section{Développement}
 	
 	\subsection{Intégration du module de widget}
 	
-	Grister fonctionne sous forme de balises à inclure dans le html, elles sont ensuite traitées par le JavaScript et le CSS pour permettre son utilisation.Pour être utilisé ce plugin, nécessite jQuery en version 1.7.1 au minimum et le fichier JavaScript de Gridster, or la version présente sur le serveur est plus ancienne.\\
+	Grister fonctionne sous forme de balises à inclure dans le HTML, elles sont ensuite traitées par le JavaScript et le CSS pour permettre son utilisation.
+Pour être utilisé ce plugin, nécessite jQuery en version 1.7.1 au minimum et le fichier JavaScript de Gridster, or la version présente sur le serveur est plus ancienne.\\
 	
-	La première idée à donc été de mettre à jour le site pour qu’il soit fonctionnel avec une version récente de jQuery, ce qui s'est révélé être un travail trop long au vu des erreurs rencontrées. Nous avons donc opté pour utiliser deux versions de jQuery en même temps.\\
-	VMProject utilise un moyen spécial pour inclure les bibliothèques JavaScript, au lieu de les importer directement sur la page HTML, elles sont importées depuis le PHP. En effet les fichiers à inclure sont écrits dans un tableau, et un script PHP ajoute les balises d’inclusions dans le HTML. Cependant, lorsque le site VMProject est appelé depuis Internet Explorer dans une version inférieure à la 8, un traitement spécial est effectué pour l’inclusion du JavaScript. Celui-ci est traité par un système qui concatène tous les fichiers les uns à la suite des autres, dans le but de réduire le nombre de caractères car Internet Explorer n’autorise qu’un nombre limité de caractères.\\
+	
+La première idée à donc été de mettre à jour le site pour qu’il soit fonctionnel avec une version récente de jQuery, ce qui s'est révélé être un travail trop long au vu des erreurs rencontrées. Nous avons donc opté pour utiliser deux versions de jQuery en même temps.\\
+	
+
+VMProject utilise un moyen spécial pour inclure les bibliothèques JavaScript, au lieu de les importer directement sur la page HTML, elles sont importées depuis le PHP. En effet les fichiers à inclure sont écrits dans un tableau, et un script PHP ajoute les balises d’inclusions dans le HTML. Cependant, lorsque le site VMProject est appelé depuis Internet Explorer dans une version inférieure à la 8, un traitement spécial est effectué pour l’inclusion du JavaScript. Celui-ci est traité par un système qui concatène tous les fichiers les uns à la suite des autres, dans le but de réduire le nombre de caractères car Internet Explorer n’autorise qu’un nombre limité de caractères.\\
 	
 	\begin{figure}[H]
 	\centering
@@ -559,13 +592,27 @@ La phase de découverte du code a longtemps été repoussée car il était inuti
 	\label{w2}
 \end{figure}
 	
-Différentes méthodes ont été testées pour ajouter jQuery 1.7.1 au projet, sans interférer avec les autres parties de VMproject.L’élément clé pour faire fonctionner en parallèle deux versions de jQuery réside dans le fait de les nommer différemments lors de l’importation. Pour ceci on utilise la méthode noConflict() de jQuery, qui retourne la version courante de jQuery ET force \$ -- variable jQuery -- à ne plus pointer vers jQuery. Il faut donc inclure la version nécessaire 1.7.1, utiliser noConflict, et inclure Gridster.Cependant, cette méthode fonctionne que pour Firefox et Chrome, en effet sur Internet Explorer, quand le minifier est appelé la double version de jQuery ne fonctionne pas. Il a donc finalement fallu faire les importations directement dans le HTML pour intégrer Gridster à VMproject.
+Différentes méthodes ont été testées pour ajouter jQuery 1.7.1 au projet, sans interférer avec les autres parties de VMproject.
+
+L’élément clé pour faire fonctionner en parallèle deux versions de jQuery réside dans le fait de les nommer différemments lors de l’importation. Pour ceci on utilise la méthode noConflict() de jQuery, qui retourne la version courante de jQuery ET force \$ -- variable jQuery -- à ne plus pointer vers jQuery. Il faut donc inclure la version nécessaire 1.7.1, utiliser noConflict, et inclure Gridster.
+
+Cependant, cette méthode fonctionne que pour Firefox et Chrome, en effet sur Internet Explorer, quand le minifier est appelé la double version de jQuery ne fonctionne pas. Il a donc finalement fallu faire les importations directement dans le HTML pour intégrer Gridster à VMproject.
 
 	\subsection{Réalisation du calendrier}
-	Afin de se repérer temporellement dans le projet, il fallait trouver un moyen d’afficher les informations importantes dans un repère temporel.\\Nous avons donc décidé de crée un calendrier de 4 semaines glissantes. Il fallait ensuite savoir quelles informations représenter et sous quelle forme. Après une étude sur les critères importants, sont ressorti 3 informations :\\
 	
-	\begin{itemize}\item	Les jalons, représente la date et le nom du jalon\item	Les réunions, indique la date et le nom de la réunion\item	Les livrables, indique la date de la validation du livrable, ou la date de fin projetée de la tâche si le livrable n’a pas été validée.\\
-	\end{itemize}\subsubsection{Comment récupérer les données ?}La principale difficulté de ce Widget est de récupérer les données concernant le différent évènement à venir.\\
+Afin de se repérer temporellement dans le projet, il fallait trouver un moyen d’afficher les informations importantes dans un repère temporel.\\
+
+Nous avons donc décidé de créer un calendrier de 4 semaines glissantes. Il fallait ensuite savoir quelles informations représenter et sous quelle forme. Après une étude sur les critères importants, sont ressorties 3 informations :\\
+	
+	\begin{itemize}
+\item	Les jalons, représentent la date et le nom du jalon
+\item	Les réunions, indiquent la date et le nom de la réunion
+\item	Les livrables, indiquent la date de la validation du livrable, ou la date de fin projetée de la tâche si le livrable n’a pas été validé.\\
+	\end{itemize}
+
+
+\subsubsection{Comment récupérer les données ?}
+La principale difficulté de ce widget est de récupérer les données concernant les différents évènements à venir.\\
 	
 \begin{figure}[H]
 	\centering
@@ -574,15 +621,20 @@ Différentes méthodes ont été testées pour ajouter jQuery 1.7.1 au projet, s
 	\label{m1}
 \end{figure}
 	
-	Ce diagramme de séquence résume les échanges internes de cette partie. Ainsi lors de l’appel de la page "Tableau de bord", le fichier principale vm\_project\_dashboard est appelé. En découle ensuite plusieurs échanges avec la base de donnée et avec le fichier Javascript du calendrier.\\
-	Pour récupérer les réunions il suffit d’interroger la base de données, puis de manipuler l’information pour la transmettre d’un langage à un autre. Il en va de même pour les livrables et les jalons.\\\subsubsection{Comment présenter les données ?}L’idée principale était d’afficher 4 semaines, ou chaque ligne représente une donnée.\\
+	Ce diagramme de séquence résume les échanges internes de cette partie. Ainsi lors de l’appel de la page "Tableau de bord", le fichier principal vm\_project\_dashboard est appelé. En découle ensuite plusieurs échanges avec la base de données et avec le fichier Javascript du calendrier.\\
+	
+Pour récupérer les réunions il suffit d’interroger la base de données, puis de manipuler l’information pour la transmettre d’un langage à un autre. Il en va de même pour les livrables et les jalons.\\
+\subsubsection{Comment présenter les données ?}
+L’idée principale était d’afficher 4 semaines, où chaque ligne représente une donnée.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{pictures/matthieu/m_calendar_1.png}
 	\caption{Calendrier, 4 semaines}
 	\label{m2}
 \end{figure}
-	Après les deux premières lignes représentant le repère temporel on retrouve les livrables symbolisés par un petit avion. Les réunions ensuite, puis les jalons.\\Il est possible que plusieurs éléments d’un même type ait lieu au même moment, dans se cas une petite pastille apparaît indiquant le nombre d’élément superposé. Lors du passage de la souris, un détail des événements apparaît dans une petite bulle. On remarque ici que pour les réunions, le nom de la réunion et sa date apparaissent.\\
+	Après les deux premières lignes représentant le repère temporel on retrouve les livrables symbolisés par un petit avion. Les réunions ensuite, puis les jalons.\\
+
+Il est possible que plusieurs éléments d’un même type ait lieu au même moment, dans ce cas une petite pastille apparaît indiquant le nombre d’éléments superposés. Lors du passage de la souris, un détail des événements apparaît dans une infobulle. On remarque ici que pour les réunions, le nom de la réunion et sa date apparaissent.\\
 	
 \begin{figure}[H]
 	\centering
@@ -591,7 +643,9 @@ Différentes méthodes ont été testées pour ajouter jQuery 1.7.1 au projet, s
 	\label{m3}
 \end{figure}
 	
-	L’un des difficultés rencontrées dans la présentation des données, a été de gérer les cas limite. Comme par exemple quand on affiche que très peu de jour d’un mois, le nom du mois ne peut pas être affiché complétement. Il faut alors calculer au préalable le nombre de jour prévu dans le mois à afficher et si celui-ci est trop petit, alors on n’affiche qu’une partie du mois.\\Voici un aperçu montrant comment le problème a été résolu :\\
+	L’une des difficultés rencontrées dans la présentation des données, a été de gérer les cas limite. Comme par exemple quand on affiche que très peu de jours d’un mois, le nom du mois ne peut pas être affiché completement. Il faut alors calculer au préalable le nombre de jours prévus dans le mois à afficher et si celui-ci est trop petit, alors on n’affiche qu’une partie du mois.\\
+
+Voici un aperçu montrant comment le problème a été résolu :\\
 	
 	\begin{figure}[H]
 	\centering
@@ -604,11 +658,13 @@ Différentes méthodes ont été testées pour ajouter jQuery 1.7.1 au projet, s
 	
 	\subsubsection{Implantation dans la page}
 	
-	Comme expliquer dans le chapitre de la conception, ces trois graphes ont pour objectifs respectifs de représenter l’avancement, le budget et les charges pour un projet ou une tâche ou sous-tâche de celui-ci, et sur une période donnée. Bien que représentant des données de nature différente, ils sont assez similaires au niveau du développement étant donné que le type de représentation graphique utilisé est identique. Ils ont donc été conçus de la même manière en s’appuyant sur les mêmes fonctions. Tous trois dépendent de deux sélecteurs situés dans la barre la plus haut-dessus : un sélecteur de tâche et un sélecteur de période. La modification d’un sélecteur doit changer dynamiquement les données affichées par les trois graphes. Toutefois, les deux fonctionnent de manières différentes en termes de récupération des données :\\
+	Comme expliqué dans le chapitre de conception, ces trois graphiques ont pour objectif respectif de représenter l’avancement, le budget et les charges pour un projet ou une tâche ou sous-tâche de celui-ci, et sur une période donnée. Bien que représentant des données de nature différente, ils sont assez similaires au niveau du développement étant donné que le type de représentation graphique utilisé est identique. Ils ont donc été conçus de la même manière en s’appuyant sur les mêmes fonctions. Tous trois dépendent de deux sélecteurs situés dans la barre située plus haut : un sélecteur de tâche et un sélecteur de période. La modification d’un sélecteur doit changer dynamiquement les données affichées par les trois graphes. Toutefois, les deux fonctionnent de manières différentes en termes de récupération des données :\\
 	
-\begin{itemize} \item A l’initialisation, chacun des graphes est créé avec comme paramètre l’ensemble des données nécessaires relatives à toutes les tâches du projet sur toute la durée de la tâche. Pour modifier le graphe, il suffit ensuite de faire appel à la fonction « change » du graphe qui actualise celui-ci en connaissant seulement l’identifiant de la tâche\item	Concernant la période en revanche, un appel à la base de données et nécessaire à chaque modification du critère de recherche ; en effet, il apparait impossible de prévoir à l’avance tous les cas possibles, sachant que l’utilisateur peut sélectionner manuellement les dates de début et de fin de période. Néanmoins, cette requête en base de données n’est pas faite depuis la méthode du graphique directement mais depuis la classe VMProject\_Dashboard qui centralise toutes les données relatives aux graphes.\\
+\begin{itemize} 
+\item A l’initialisation, chacun des graphes est créé avec comme paramètre l’ensemble des données nécessaires relatives à toutes les tâches du projet sur toute la durée de la tâche. Pour modifier le graphe, il suffit ensuite de faire appel à la fonction « change » du graphe qui actualise celui-ci en connaissant seulement l’identifiant de la tâche
+\item	Concernant la période en revanche, un appel à la base de données et nécessaire à chaque modification du critère de recherche ; en effet, il apparait impossible de prévoir à l’avance tous les cas possibles, sachant que l’utilisateur peut sélectionner manuellement les dates de début et de fin de période. Néanmoins, cette requête en base de données n’est pas faite directement depuis la méthode du graphique, mais depuis la classe VMProject\_Dashboard qui centralise toutes les données relatives aux graphes.\\
 \end{itemize}
-Finalement, chaque graphe possède sa propre classe mais est averti par une classe commune à tous les graphes de la dashboard lors d’un changement de critère d’affichage avec en paramètre les données à afficher ou un indicateur sur celles-ci. Etant donné que les trois jauges sont relativement similaires, nous avons également choisi dans un souci de clarté du code de regrouper toutes les méthodes communes à la création des différents éléments graphiques (arcs, cercles, couleurs, vitesses…) dans une seule classe accessibles par les classes des trois graphes : la classe ManagerDataPie. Le fonctionnement général est décrit dans la figure \ref{c3}.  
+Finalement, chaque graphe possède sa propre classe mais est averti par une classe commune lors d’un changement de critère d’affichage, avec en paramètre les données à afficher ou un indicateur sur celles-ci. Etant donné que les trois jauges sont relativement similaires, nous avons également choisi dans un souci de clarté du code de regrouper toutes les méthodes communes à la création des différents éléments graphiques (arcs, cercles, couleurs, vitesses…) dans une seule classe accessibles par les classes des trois graphes : la classe ManagerDataPie. Le fonctionnement général est décrit dans la figure \ref{c3}.  
 
 	\subsubsection{Données représentées}
 
@@ -631,10 +687,18 @@ En ce qui concerne le graphe de budget, l’idée est ici d’indiquer à l’ut
 \end{figure}
 
 Plusieurs faits sont notables ici.\\
-Pour le graphe de gauche :\\
-\begin{itemize}\item	Le budget dépensé s’élève actuellement à 37 034 \euro{}.\item Le budget prévu pour cette tâche était initialement de 27 331  \euro mais est clairement dépassé, ce qui saute d’ailleurs directement aux yeux grâce à la couleur rouge. On note que le dépassement de budget est pour le moment de 9 703  \euro{}.\item On peut encore s’attendre à 8 017  \euro{} de dépenses sur cette tâche.Pour le graphe central :\item Le budget prévu de 18 020  \euro{} n’est pas encore dépassé mais les prévisions estiment qu’il le sera dans le futur pour un surcoût de 10 434  \euro{}.Pour le graphe de droite : \item La valeur du projeté est précédée d’un signe « - » ce qui signifie que le projeté est inférieur au prévu : des économies devraient être effectuées, à hauteur de : 114 366  \euro{} - 32 550  \euro{} (soit 81816  \euro{}). La jauge du projeté peut donc être en addition du prévu, ou en soustraction de celui-ci.Graphiquement, les proportions relatives des données, bien que non indiquées numériquement, sont très visibles. Ces graphes regroupent une grande quantité de données et sont pourtant très lisibles. Le graphe de charges fonctionne exactement de la même manière que celui de budget, au détail près qu’il affiche l’avancement du projet en termes de charges en jours/hommes. Il ne tient pas compte du temps, seulement de la charge de travail effectuée/qui aurait dû être effectuée/restant à effectuer selon le calcul du logiciel. Nous ne détaillerons pas le fonctionnement détaillé étant donné qu’il est vraiment similaire au graphe de budget pour la lecture et la compréhension.\\
+Pour le graphe de gauche :\\
+\begin{itemize}
+\item	Le budget dépensé s’élève actuellement à 37 034 \euro{}.
+\item Le budget prévu pour cette tâche était initialement de 27 331  \euro mais est clairement dépassé, ce qui saute d’ailleurs directement aux yeux grâce à la couleur rouge. On note que le dépassement de budget est pour le moment de 9 703  \euro{}.
+\item On peut encore s’attendre à 8 017  \euro{} de dépenses sur cette tâche.
+Pour le graphe central :
+\item Le budget prévu de 18 020  \euro{} n’est pas encore dépassé mais les prévisions estiment qu’il le sera dans le futur pour un surcoût de 10 434  \euro{}.
+Pour le graphe de droite : 
+\item La valeur du projeté est précédée d’un signe « - » ce qui signifie que le projeté est inférieur au prévu : des économies devraient être effectuées, à hauteur de : 114 366  \euro{} - 32 550  \euro{} (soit 81816  \euro{}). La jauge du projeté peut donc être en addition du prévu, ou en soustraction de celui-ci.
+Graphiquement, les proportions relatives des données, bien que non indiquées numériquement, sont très visibles. Ces graphes regroupent une grande quantité de données et sont pourtant très lisibles. Le graphe de charges fonctionne exactement de la même manière que celui de budget, au détail près qu’il affiche l’avancement du projet en termes de charges en jours/hommes. Il ne tient pas compte du temps, seulement de la charge de travail effectuée/qui aurait dû être effectuée/restant à effectuer selon le calcul du logiciel. Nous ne détaillerons pas le fonctionnement détaillé étant donné qu’il est vraiment similaire au graphe de budget pour la lecture et la compréhension.\\
 \end{itemize}
-Concernant le graphe d’avancement, l’objectif est de donner une idée à l’utilisateur de son avancée dans le projet ou dans la tâche en termes de temps.  Un projet est avant tout un délai à respecter et donc une course contre le temps. Il se distingue du graphe de charge car ce dernier tient compte du travail effectué en jours/hommes, alors qu’ici la quantité de travail n’intervient pas dans la jauge : la valeur représentée est le temps écoulé entre la première feuille de temps ajoutée sur la tâche et la dernière. Il est donc possible que pendant une longue durée, aucun travail ne soit accompli et pourtant le temps avance. Graphiquement, on retrouve les mêmes éléments que pour les deux graphes précédents, comme on peut le voir sur la partie gauche de la figure suivante :\\
+Concernant le graphe d’avancement, l’objectif est de donner une idée à l’utilisateur de son avancée dans le projet ou dans la tâche en termes de temps.  Un projet est avant tout un délai à respecter et donc une course contre le temps. Il se distingue du graphe de charge car ce dernier tient compte du travail effectué en jours/hommes, alors qu’ici la quantité de travail n’intervient pas dans la jauge : la valeur représentée est le temps écoulé entre la première feuille de temps ajoutée sur la tâche et la dernière. Il est donc possible que pendant une longue durée, aucun travail ne soit accompli et pourtant le temps avance. Graphiquement, on retrouve les mêmes éléments que pour les deux graphes précédents, comme on peut le voir sur la partie gauche de la figure suivante :\\
 
 \begin{figure}[H]
 	\centering
@@ -644,7 +708,7 @@ Plusieurs faits sont notables ici.\\
 \end{figure}
 
 Toutefois, l’affichage de gauche n’est pas le principal : l’indication du temps réel passé (ici 158 jours) n’est visible qu’au passage de la souris sur la partie bleue du graphe. En temps normal, c’est le pourcentage d’avancement du projet qui est écrit à l’écran (comme sur le graphe du milieu). On peut immédiatement remarquer que ce pourcentage ne correspond pas au remplissage de la jauge ; ceci s’explique par le fait que l’indicateur en pourcentage soit la valeur d’avancement global de la tâche sélectionnée, et non pas d’avancement temporel. Ce choix a été fait pour permettre à l’utilisateur de se rendre compte du temps qu’il lui reste avant la fin prévue de la tâche et de la quantité de travail qu’il reste à faire. Dans notre cas, la date de fin de tâche est déjà dépassée et pourtant seulement la moitié du travail a été effectuée ; la tâche a déjà 51 jours de retard, et le logiciel a prévu qu’il y aurait encore besoin de 84 jours pour la terminer…  En cas d’avance temporelle à la fin d’un projet ou d’une tâche, la partie rouge du retard prend une couleur verte pour l’avance, comme on peut le voir sur la partie droite de la figure ci-dessus.\\
-VMProject permet de forcer une valeur, c’est-à-dire de la rentrer manuellement même si elle est contraire aux calculs ou aux prévisions du logiciel. Par exemple, si moins d’heures que prévues ont été consacrées à la terminaison d’une tâche, celle-ci ne sera pas considérée comme finie par le logiciel alors qu’elle l’est en réalité. L’utilisateur peut alors placer l’avancement de la tâche à 100\% et le déclarer comme terminer. Ces cas de forçage provoquent des incohérences graphiques, et nous affichons donc un petit cadenas rose pour le signaler avec une légende en bas du widget au passage de la souris sur le cadenas, comme on peut le voir sur la figure suivante :\\
+VMProject permet de forcer une valeur, c’est-à-dire de la rentrer manuellement même si elle est contraire aux calculs ou aux prévisions du logiciel. Par exemple, si moins d’heures que prévues ont été consacrées à la terminaison d’une tâche, celle-ci ne sera pas considérée comme finie par le logiciel alors qu’elle l’est en réalité. L’utilisateur peut alors placer l’avancement de la tâche à 100\% et le déclarer comme terminer. Ces cas de forçage provoquent des incohérences graphiques, et nous affichons donc un petit cadenas rose pour le signaler avec une légende en bas du widget au passage de la souris sur le cadenas, comme on peut le voir sur la figure suivante :\\
 
 \begin{figure}[H]
 	\centering
@@ -669,9 +733,12 @@ A la 5\up{ème} étape, la couleur jaune a été ajouté artificiellement afin d
 	\subsubsection{Difficultés rencontrées}
 	
 	La phase de développement concernant ces trois graphes s’est déroulée en trois étapes : dans un premier temps, l’aspect graphique a été mis en avant avec un développement en statique (les données utilisées pour alimenter les graphes étaient codées en dur), puis la connexion avec les données de la base de VMProject a été établie, et enfin l’affichage a été modifié afin de traité tous les cas possibles. \\
-	La difficulté de la première étape a été de se familiariser avec D3.js et le format SVG ; cette librairie utilise ce format pour l’affichage des graphes. Le paramétrage et l’utilisation des critères graphiques ainsi que l’ajout de fonctionnalités dynamiques (visibles à chaque changement de tâche notamment, avec par exemple les transitions lors de l’évolution des graphes ou encore l’effet de rebond) ont demandé de nombreuses recherches et un certain nombre d’essais avant d’être fonctionnels. \\
-	La seconde étape a sans doute été la plus longue étant donné qu’il a fallu d’abord trouver dans la base les données à afficher, les calculer et leur donner le bon format, puis les connecter avec les graphes. En particulier, avec le sélecteur de période, on peut choisir une durée précise sur une tâche. Dans ce cas, pour le graphe de charges, il est obligatoire d’additionner toutes les feuilles de temps en base de données sur la période sélectionnée.\\
-	La troisième étape, bien que peu productive en quantité de code, a nécessité beaucoup de temps afin d’identifier les cas particuliers, de comprendre les erreurs et de les corriger. Dans les cas non représentables (toutes les valeurs à zéro par exemple), un message d’erreur est affiché, comme dans les graphes de budget de la figure \ref{c9}. Certaines configurations, présentées également dans la figure, paraissent vide de sens. C’est souvent le cas pour des tâches qui ne durent qu’une journée ou qui ont été créées mais inutiles et finalement considérées comme terminées.\\
+	
+La difficulté de la première étape a été de se familiariser avec D3.js et le format SVG ; cette librairie utilise ce format pour l’affichage des graphes. Le paramétrage et l’utilisation des critères graphiques ainsi que l’ajout de fonctionnalités dynamiques (visibles à chaque changement de tâche notamment, avec par exemple les transitions lors de l’évolution des graphes ou encore l’effet de rebond) ont demandé de nombreuses recherches et un certain nombre d’essais avant d’être fonctionnels. \\
+	
+La seconde étape a sans doute été la plus longue étant donné qu’il a fallu d’abord trouver dans la base les données à afficher, les calculer et leur donner le bon format, puis les connecter avec les graphes. En particulier, avec le sélecteur de période, on peut choisir une durée précise sur une tâche. Dans ce cas, pour le graphe de charges, il est obligatoire d’additionner toutes les feuilles de temps en base de données sur la période sélectionnée.\\
+	
+La troisième étape, bien que peu productive en quantité de code, a nécessité beaucoup de temps afin d’identifier les cas particuliers, de comprendre les erreurs et de les corriger. Dans les cas non représentables (toutes les valeurs à zéro par exemple), un message d’erreur est affiché, comme dans les graphes de budget de la figure \ref{c9}. Certaines configurations, présentées également dans la figure, paraissent vide de sens. C’est souvent le cas pour des tâches qui ne durent qu’une journée ou qui ont été créées mais inutiles et finalement considérées comme terminées.\\
 	
 		\begin{figure}[H]
 	\centering
@@ -791,8 +858,19 @@ La réalisation de ce filtre a nécessité ?????????????? heures de travail.
 
 Pour rendre un site web imprimable il existe différentes solutions :\\
 
-\begin{itemize}\item	Créer une nouvelle feuille de style qui sera seulement appelée lors d’une demande d’impression.\item Créer une nouvelle page dans un format imprimable (PDF / Image) ou seul les éléments important seront placés.
-\end{itemize}La solution d’exporter la page dans un autre format pour la rendre imprimable est beaucoup plus compliquée à mettre en œuvre et demande une charge de travail élevée, en revanche elle permet une mise en page précise qu’on ne pourrait pas avoir avec une autre méthode. Nous avons donc opté pour la première solution, à savoir créer une nouvelle feuille de style qui sera appelé que lors de l’impression. Cette fonctionnalité était déjà implantée sur les autres pages du site, nous devions donc faire attention de ne pas changer la version imprimable des autres pages.\\\subsubsection{Comment choisir quel élément afficher ?}Très vite nous nous sommes heurté à un problème. En effet nous essayons d’afficher les blocs, qu’on souhaitait faire apparaître dans la version imprimable, en spécifiant leur propriété display à block. Cependant rien ne s’affichait.\\Nous avons donc recherché pourquoi rien ne s’affichait. Avant d’appeler la feuille de style ne notre page, le CSS principal était appelé en premier et forçait l’affichage de toute les div dans le html à none.\\La propriété none de CSS est récursive, ce qui veut dire que si un élément à un fils à une propriété différente elle ne sera pas appliqué car none prendra le dessus.Ainsi pour afficher un élément enfant, nous devons afficher tous les éléments parents. Voici un aperçu de la façon d’on nous avons implémenter cette idée :\\
+\begin{itemize}
+\item	Créer une nouvelle feuille de style qui sera seulement appelée lors d’une demande d’impression.
+\item Créer une nouvelle page dans un format imprimable (PDF / Image) ou seul les éléments important seront placés.
+\end{itemize}
+
+La solution d’exporter la page dans un autre format pour la rendre imprimable est beaucoup plus compliquée à mettre en œuvre et demande une charge de travail élevée, en revanche elle permet une mise en page précise qu’on ne pourrait pas avoir avec une autre méthode. Nous avons donc opté pour la première solution, à savoir créer une nouvelle feuille de style qui sera appelé que lors de l’impression. Cette fonctionnalité était déjà implantée sur les autres pages du site, nous devions donc faire attention de ne pas changer la version imprimable des autres pages.\\
+
+\subsubsection{Comment choisir quel élément afficher ?}
+Très vite nous nous sommes heurté à un problème. En effet nous essayons d’afficher les blocs, qu’on souhaitait faire apparaître dans la version imprimable, en spécifiant leur propriété display à block. Cependant rien ne s’affichait.\\
+
+Nous avons donc recherché pourquoi rien ne s’affichait. Avant d’appeler la feuille de style ne notre page, le CSS principal était appelé en premier et forçait l’affichage de toute les div dans le html à none.\\
+
+La propriété none de CSS est récursive, ce qui veut dire que si un élément à un fils à une propriété différente elle ne sera pas appliqué car none prendra le dessus.Ainsi pour afficher un élément enfant, nous devons afficher tous les éléments parents. Voici un aperçu de la façon d’on nous avons implémenter cette idée :\\
 
 \begin{figure}[H]
 	\centering
