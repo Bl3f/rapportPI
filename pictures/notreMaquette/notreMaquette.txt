@@ -1,0 +1,52 @@
+Description de notre maquette
+
+Au début du projet, lors de la phase de conception, nous avons créé une maquette simplifiée de notre tableau de bord, composée de plusieurs éléments donnant des informations pertinentes à l'utilisateur sur l'avancement et l'évolution de son/ses projet(s).
+
+
+"notreMaquette.jpg"
+
+
+Nous avons découpé les différentes parties de cette première maquette, de haut en bas et de gauche à droite, pour vous la présenter :
+
+
+"description.jpg"
+
+Tout en haut de la page, nous avons prévu un emplacement présentant le titre et la description du projet. Cet élément basique permet de rappeler à l'utilisateur les données qu'il visualise, sous peine de confondre ses statistiques de projets et de les faire échouer suite à des décisions non adaptées.
+
+
+"chiffresClé.jpg"
+
+Directement en-dessous, on retrouve des chiffres clés avec des indicateurs colorés permettant de voir l'information recherchée très rapidement. Ces chiffres sont portés sur les données principales que recherche le chef de projet, à savoir le retard, le budget, les charges ou encore la date de fin prévue du projet.
+
+
+"calendrier.jpg"
+
+Le calendrier est un élément indispensable de notre tableau de bord. Il affiche les jours, semaines et mois de l'année mais surtout des informations pertinentes comme les réunions,  jalons ou autres livrables prévus dans le temps.
+
+
+"avancement.jpg"
+
+Voici les premiers graphiques de notre dashboard. Ces trois petits cercles décrivent l'avancement du projet, en mode prévu, réel et projeté. Ces trois modes sont la base de l'application web VMProject, grâce auxquels on peut facilement déduire si le projet est en retard et le temps qui sera nécessaire pour le combler.
+
+
+"indicateur.jpg"
+
+Immédiatement à droite des trois petits graphiques que nous venons de présenter, on peut trouver un emplacement dédié à l'écart de coût sur le projet. Le but de cette section est de déterminer grâce aux données de VMProject si le budget est bien géré, et de l'afficher de manière très simple et intelligible pour l'utilisateur final.
+
+
+"repartition.jpg"
+
+Plus bas, la page contient un graphique qui présente la répartition des charges et du budget pour les différentes ressources du projet. Ainsi, en cliquant sur un prénom dans le camembert, les données du graphique de droite sont actualisées pour afficher le détail du budget de la personne en question sur les principales phases du projet.
+
+
+"burndown.jpg"
+
+En bas de page, nous retrouvons le dernier graphique de notre maquette. C'est un graphique classique de la gestion de projet, qui représente l'avancement du travail de l'équipe par rapport au temps. Il est utile pour voir quand le travail à faire pourra être terminé.
+
+
+"barreMembres.jpg"
+
+Enfin, sur la toute droite du tableau de bord, nous retrouvons un panneau (déroulant) présentant les acteurs du projet : les membres de l'équipe et les clients. C'est le dernier élément de notre maquette, qui vient donc compléter notre tableau de bord.
+
+
+Cette maquette n'est certes pas si jolie mais présente tous les points importants que nous pensions intégrer dans notre tableau de bord.

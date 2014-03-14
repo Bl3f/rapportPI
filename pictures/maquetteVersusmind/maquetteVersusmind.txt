@@ -1,0 +1,65 @@
+Description de la maquette de VersusMind
+
+Nous avons envoyé notre maquette à VersusMind pour qu'ils l'adaptent à l'environnement graphique de VMProject. Voici la maquette qui nous a été renvoyée, et qui allait servir de référence pour le développement du tableau de bord.
+
+
+"maquetteVersusmind.jpg"
+
+
+Comme pour la maquette que nous avions créée, nous allons détailler celle-ci en découpant les éléments un par un. Cela sera particulièrement utile car des modifications importantes et parfois complexes ont été appliquées par rapport à ce que nous imaginions au départ. A nouveau, nous présenterons notre découpage de la maquette de haut en bas, et de bas à gauche.
+
+
+"filtre.jpg"
+
+Au sommet du tableau de bord, un filtre permet à l'utilisateur de sélectionner une tâche particulière d'un projet, une période donnée ainsi qu'une partie ou la totalité de l'équipe. Toutes les données des graphiques et du tableau de bord en général devront être mis à jour en fonction de ce filtre. 
+Sur la droite est située la légende colorimétrique de VMProject pour les modes prévu, réel et projeté. Ces couleurs sont utilisées dans toute l'application et facilite la lecture des données présentées.
+
+Cependant, la partie du filtre permettant de choisir des membres ou la totalité de l'équipe sera abandonnée par la suite car ce n'est pas forcément un élément intéressant, étant donné que les graphiques qui suivent comportent déjà ces informations sur les ressources. 
+
+
+"description&calendrier.jpg"
+
+Sous le filtre, on retrouve la description du projet ou de la tâche sélectionnée à l'aide du filtre. Le chiffre clé sur la fin du projet s'invite dans cet espace, et cette donnée est désormais affichée en prévu et en projeté (les couleurs bleu foncé et rose correspondent aux modes prévu et projeté, comme nous avons pu le voir dans le filtre).
+Juste en-dessous, le calendrier a pris des couleurs et des flèches sur les côtés permettent de naviguer dans l'histoire, mais aussi dans le futur du projet. Les réunions, jalons et livrables sont représentés par des icônes livrant leurs détails au survol de la souris.
+
+
+"3graphs.jpg"
+
+Ensuite, nous pouvons remarquer que nos 3 petits graphiques ont changés puisqu'ils ont intégré les chiffres clés dont nous parlions, sur le retard, le budget et les charges. C'est une bonne idée puisque les informations portaient sur le même sujet, elles sont désormais rassemblées.
+A nouveau, il faut se fier aux code colorimétrique pour comprendre les graphiques. Le cercle bleu clair correspond au réel, le bleu foncé au prévu et le rose au projeté. Sur le graphique d'avancement, le retard est mis en avant en étant affiché en rouge, pour sauter aux yeux de l'utilisateur.
+
+
+"repartitionInit.jpg"
+
+Le graphique suivant étant particulièrement complexe, nous allons expliquer son fonctionnement un peu plus en détail. De base, le tableau de bord affiche un camembert comme sur l'image ci-dessus. Il est possible de changer de mode de données (réel, prévu, projeté) mais aussi de passer du mode "Par tâches" au mode "Par ressources". Il est aussi possible de passer du mode "Charges" au mode "Budget", pour afficher les données en termes de jours-hommes ou de valeur monétaire, mais ce n'est pas affiché sur cette maquette; des sélecteurs à cet effet seront ajoutés en haut à gauche du graphique.
+
+De plus, les parts du camembert sont cliquables pour afficher de nouvelles informations, comme sur l'image suivante :
+
+"repartitionClicked.jpg"
+
+Ici, une part (un tâche) a été cliquée et le détail de cette tâche est affiché en-dessous.
+
+Sur la gauche, c'est le total des heures correspondant à cette tâche. Il ne faut pas forcément se fier aux nombres car la maquette qui nous a été renvoyée n'est pas aussi précise. Essayons de comprendre ce qui est affiché :
+
+- Le nombre en bleu foncé correspond au prévu; cette tâche a donc été évaluée à 120 jours-hommes. Le rectangle bleu foncé à côté représente cette quantité de jours.
+- Le nombre en bleu clair, et sa représentation rectangulaire, correspondent au réel. Le rectangle réel étant plus grand que la barre prévue, on comprend que le chiffre réel est erroné. Il devrait en fait valoir 125.
+- Le nombre en rouge et le rectangle associé, correspondent au retard. C'est tout simplement la différence entre le réel et le prévu. Il vaut ici 5, ce qui est cohérent si le réel était bien de 125.
+- Enfin, le nombre et le rectangle rose correspondent au projeté. VMProject a donc calculé qu'il reste 20 jours-hommes de travail avant de terminer cette tâche, ce qui indique un retard total potentiel de 25 jours-hommes.
+
+Sur la droite est présenté un niveau encore plus poussé de détails :
+
+- Dans le cas où le camembert du haut était en mode "Par tâches", ce graphique présente au choix les tâches filles à la tâche cliquée, ou les ressources ayant travaillé sur tâche cliquée.
+- Si le camembert était en mode "Par ressources", le détail affiché ne porte que sur les tâches effectuées par la ressource cliquée (car nous n'allons pas afficher le détail par ressources d'une ressource).
+
+La complexité de ce graphique nous a semblé au départ un peu déstabilisante mais elle a le mérite de présenter un maximum d'informations. Avec un petit temps d'adaptation, on peut comprendre ce graphique rapidement.
+
+
+"barreMembres.jpg"
+
+Sur le côté de la maquette se situe un petit panneau gris, dépliable avec une flèche, affichant les acteurs du projet : membres de l'équipe et les clients. Ce panneau a peu changé par rapport à notre maquette d'origine et nous ne le détaillerons donc pas plus que cela.
+
+
+Il faut noter que les éléments principaux, c'est à dire le calendrier et les différents graphiques, sont dans des widgets déplaçable par l'utilisateur, pour lui permettre d'organiser son tableau de bord à sa guise.
+
+
+En définitive, cette maquette nous est revenue plus travaillée, mais surtout bien plus complexe et il nous a fallu un certain temps afin d'en comprendre toutes les subtilités.

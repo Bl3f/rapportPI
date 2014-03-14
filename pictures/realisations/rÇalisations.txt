@@ -1,0 +1,75 @@
+Réalisation du graphique de répartition
+
+"repartition.jpg"
+
+Le graphique de répartition a été développé en local par Thibaut Zonca et Christophe Blefari a travaillé sur son intégration au tableau de bord en ligne (et donc à la connexion des données). Ce graphique étant assez complexe (nous n'avons pas tout compris pendant un certain temps), il a fallu découper son développement en plusieurs parties plus simples. 
+
+Notre code pour ce graphique est contenu dans une classe javascript. Les différentes parties du graphique sont tracées grâce à des appels de fonctions. Pour rendre possible la configuration rapide de paramètres importants, nous avons implémenté une configuration sous forme de dictionnaire dans cette classe.
+
+
+Décomposition du graphique en éléments simples :
+
+
+Camembert
+
+"camembert.jpg"
+
+La première étape a été de programmer le graphique principal, le camembert. Pour cela, la librairie D3.js a été utilisée comme pour nos autres graphiques; cette permet de faire des graphiques en SVG et bien plus encore. Grâce à D3.js, nous avons pu développer notre propre graphique qui propose aussi des effets agréables comme des transitions : en changeant de mode (prévu, réel, projeté), les parts de notre camembert sont recalculées et elles "glissent" automatiquement de manière fluide pour présenter les nouvelles données à afficher.
+
+Cependant, certaines fonctionnalités ont demandé plus de réflexion : il est plus facile de se documenter sur la façon de construire un graphique de type camembert avec D3.js, que sur des points beaucoup plus précis qui sont ceux de notre projet industriel. C'est là que nous devons faire preuve d'imagination dans notre approche pour résoudre un problème par ses propres moyens. 
+
+Parmi ces points plus difficiles, il y a par exemple le traçage des traits pour qu'ils correspondent à ce que l'on peut voir sur la maquette de Versusmind (et aussi trivial que celà puisse paraître, la gestion des légendes n'est pas gérée de manière simple par D3.js). Le problème sera résolu après de longues séances d'essais, en calculant les coordonnées des lignes à tracer grâce à l'angle médian de chaque part. 
+Autre point, les transitions entre les différents modes ont parfois posé problème, car la structure des données change (le nombre de tâches prévue peut être différent du nombre de tâche qui ont réellement été commencées) parfois entre les modes, ce que nous n'avions pas forcément prévu au départ.
+Pendant un long moment, nous avions un autre problème d'affichage important lié aux légendes : lorsque des parts étaient très petites, les légendes de cette part et de ses parts voisines étaient souvent affichées à quelques millimètres d'écart seulement, ce qui rendait la lecture impossible. Problème contourné en créant une catégorie "Autres" regroupant les parts inférieures à un pourcentage donné; nous avons choisi 7% pour un confort de lecture optimal.
+
+
+Détail (simple) de tâche / ressource
+
+"detailTache.jpg"
+
+Ensuite, la deuxième étape a été de développer le petit encart qui s'affiche au clic sur une part, donnant des informations sur la tâche ou ressource sélectionnée (toujours en terme de prévu, réel et de projeté). Encore une fois, le développement s'est fait grâce à D3.js pour tracer automatiquement ce petit graphique. Ce graphique a été plus rapide a développer que le camembert car il est moins complexe.
+
+Par contre, il aura fallu plusieurs semaines trouver tous les petits bugs qu'il présentait, car le nombre de combinaisons de données et donc de possibilités d'affichages différents possibles générait de temps à autre une erreur qui n'avait pas encore été détectée.
+
+
+Détails (avancés) de tâche / ressource
+
+"detailsTache.jpg"
+
+La troisième étape a été de développer le grand encart, situé à droite du graphique de détail simple de tâche. Comme vous l'aurez remarqué, ce nouveau graphique est en fait composé de plusieurs petits graphiques simples de détails, mais orientés horizontalement.
+
+Ce graphique affiche au choix, grâce au sélecteur situé en haut à droite du graphique :
+
+- le détail des tâches composant la tâche sélectionnée
+- le détail des ressources composant la tâche sélectionnée
+- le détail des tâches qu'a effectué la ressource sélectionnée.
+
+
+Intégration des graphiques sur le tableau de bord, connexion des données
+
+Christophe, à toi de jouer !
+
+
+
+Finalement, ce graphique complexe aura au total nécessité ?????????????? heures de travail, répartis sur 40 jours entre deux personnes.
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+Réalisation du filtre de période
+
+"filtrePeriode.jpg"
+
+Pour le réaliser, nous nous sommes mis d'accord avec nos encadrants industriels pour savoir quelles options proposer. Cinq options sont donc disponibles pour l'utilisateur de VMProject : le mois courant, la semaine courante, le mois dernier, la semaine dernière ou encore une période de son choix. Pour cette dernière option, il faut afficher un sélecteur de date sur la droite du filtre, comme illustré sur l'image ci-dessous.
+
+"filtrePeriodeDatepicker.jpg"
+
+Ce filtre de période a donc été intégré au tableau de bord par Thibaut Zonca. L'intérêt de ce filtre est d'appliquer à tous les graphiques (qui ont été réalisés par différentes personnes) du tableau de bord la période sélectionnée. Pratique pour un chef de projet qui veut regarder ce qu'il s'est passé à un mois donné de l'année, ou bien lors de ses deux dernières semaines de vacances dans son projet, car ces périodes ne seraient pas été rapidement visualisables autrement.
+
+Pour détailler le fonctionnement du filtre de période d'un côté plus technique, un calcul est fait en javascript pour déterminer le timestamp de l'option choisie. Le timestamp est un nombre qui désigne le nombre de secondes qui se sont écoulées depuis le 1er janvier 1970 à minuit; cela a par exemple pour avantage de faciliter la comparaison entre deux dates, car cela revient à faire la différence entre deux nombres entiers. Dans le cas de l'option de période personnalisable par l'utilisateur, le calcul est simple car les dates de début et de fin de période sont simplement données lorsque l'on clique sur le jour du calendrier (voir image précédente); il faut donc simplement convertir ces deux dates du format "normal" au format timestamp. Dans le cas des quatre autres options, nous utilisons la date actuelle pour déterminer le mois et la semaine courant(e). Il reste donc à trouver le premier/dernier jour du mois ou de la semaine, et le tour est joué après conversion en timestamp.
+
+Enfin, pour intégrer ce filtre aux autres graphiques, cela se traduit par une requête SQL sur la base de données de l'application dans le but d'extraire uniquement les informations (les ajouts ont aussi un timestamp) qui ont été ajoutées entre les deux dates que nous lui donnons en argument. Le calendrier a aussi nécessité des modifications car il doit toujours afficher une période d'un mois, il ne faut donc pas réduire sa taille lorsque l'on renseigne une période de deux semaines par exemple.
+
+
+La réalisation de ce filtre a nécessité ?????????????? heures de travail.
